@@ -5,7 +5,6 @@ var bodyParser = require('body-parser');
 var config = require('./config/dbconfig');
 
 var index = require('./routes');
-//var students = require('./routes/students');
 var countries = require('./routes/countries');
 
 var app = express();
