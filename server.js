@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 
-var config = require('./config');
+var config = require('./config/dbconfig');
 
 var index = require('./routes');
 //var students = require('./routes/students');

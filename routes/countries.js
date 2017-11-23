@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var mongojs = require('mongojs');
-var config = require('../config');
+var config = require('../config/dbconfig');
 
 var db = mongojs(config.database, ['countries']);
 
