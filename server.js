@@ -5,7 +5,8 @@ var bodyParser = require('body-parser');
 var config = require('./config/dbconfig');
 
 var index = require('./routes');
-var students = require('./routes/students');
+//var students = require('./routes/students');
+var countries = require('./routes/countries');
 
 var app = express();
 
@@ -29,7 +30,7 @@ app.use(function(req, res, next){
 });
 
 app.use("/", index);
-app.use("/api", students);
+app.use("/api", countries);
 
 app.listen(config.port, function() {
     console.log('Server started on port ' + config.port);
